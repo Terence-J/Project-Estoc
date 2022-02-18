@@ -11,25 +11,25 @@ nav {
     z-index: 1;
     overflow: hidden;
     position: fixed;
-    top: 29.2%;
-    left: 27.1%;
+    top: 30%;
+    left: 30%;
 }
 
 nav a {
     display: inline-block;
-    padding: 80px;
+    padding: 115px;
     color: rgb(0, 0, 0);
     font-family: korean;
     text-align: center;
     text-decoration: none;
     font-size: 48px;
-    /*transition: 2s;*/
+    /*transition: 2s;
   }
 
 nav a:hover {
     color: rgba(220, 20, 60, 0.671);
     transition-property: color;
-    transition: 2s;
+    transition: 2s;*/
   }
 
 .shape {
@@ -38,7 +38,7 @@ nav a:hover {
     left: 30%;
     width: 220px;
     height: 220px;
-    border: 3px solid rgba(220, 20, 60, 0.671);
+    border: 3px solid rgba(255, 255, 255, 0.671);
 }
 
 .container .shape {
@@ -46,3 +46,24 @@ nav a:hover {
     transition-delay: 0.9s;
     transform: rotate(calc(270deg - (5deg * var(--s))));
 }
+
+.waviy {
+    position: fixed;
+    top: 38%;
+    left: 31.5%;
+    transition: 2s;
+  }
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.671);
+    text-transform: uppercase;
+    animation: flip 10s infinite;
+    animation-delay: calc(.3s * var(--i))
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
