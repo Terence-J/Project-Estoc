@@ -1,0 +1,48 @@
+@font-face {
+    font-family: korean;
+    src: url(fonts/NotoSansKR-Light.otf);
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+nav {
+    z-index: 1;
+    overflow: hidden;
+    position: fixed;
+    top: 29.2%;
+    left: 27.1%;
+}
+
+nav a {
+    display: inline-block;
+    padding: 80px;
+    color: rgb(0, 0, 0);
+    font-family: korean;
+    text-align: center;
+    text-decoration: none;
+    font-size: 48px;
+    /*transition: 2s;*/
+  }
+
+nav a:hover {
+    color: rgba(220, 20, 60, 0.671);
+    transition-property: color;
+    transition: 2s;
+  }
+
+.shape {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    width: 220px;
+    height: 220px;
+    border: 3px solid rgba(220, 20, 60, 0.671);
+}
+
+.container .shape {
+    transition: 5s;
+    transition-delay: 0.9s;
+    transform: rotate(calc(270deg - (5deg * var(--s))));
+}
