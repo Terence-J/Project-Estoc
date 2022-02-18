@@ -52,8 +52,8 @@ nav a {
     font-size: 40px;
     color: rgba(255, 255, 255, 0.671);
     text-transform: uppercase;
-    animation: flip 10s infinite;
-    animation-delay: calc(.3s * var(--i))
+    animation: flip 5s infinite;
+    animation-delay: calc(.2s * var(--i))
   }
   @keyframes flip {
     0%,80% {
