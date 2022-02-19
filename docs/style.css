@@ -25,7 +25,7 @@ nav a {
     font-size: 48px;
 }
 
-.shape {
+.square {
     position: absolute;
     top: 30%;
     left: 30%;
@@ -34,17 +34,17 @@ nav a {
     border: 3px solid rgba(255, 255, 255, 0.671);
   }
 
-.container .shape {
+.box .square {
   transition: 4s;
   transition-delay: 1s;
   transform: rotate(calc(270deg - (5deg * var(--s))));
 }
-.waviy {
+.turn {
     position: fixed;
     top: 38%;
     left: 31.5%;
   }
-  .waviy span {
+  .turn span {
     transition: 4s;
     transition-delay: 1s;
     position: relative;
