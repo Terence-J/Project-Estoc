@@ -40,27 +40,39 @@ h1 span:nth-child(1) {
 }
 
 h1 span:nth-child(2) {
-  animation-delay: 0.14s;
+  animation-delay: 0.1s;
 }
 
 h1 span:nth-child(3) {
-  animation-delay: 0.28s;
+  animation-delay: 0.2s;
 }
 
 h1 span:nth-child(4) {
-  animation-delay: 0.37s;
+  animation-delay: 0.3s;
 }
 
 h1 span:nth-child(5) {
-  animation-delay: 0.51s;
+  animation-delay: 0.4s;
 }
 
 h1 span:nth-child(6) {
-  animation-delay: 0.65s;
+  animation-delay: 0.5s;
 }
 
 h1 span:nth-child(7) {
-  animation-delay: 0.81s;
+  animation-delay: 0.6s;
+}
+
+h1 span:nth-child(8) {
+  animation-delay: 0.7s;
+}
+
+h1 span:nth-child(9) {
+  animation-delay: 0.8s;
+}
+
+h1 span:nth-child(10) {
+  animation-delay: 0.9s;
 }
 
 @keyframes animate {
@@ -77,5 +89,70 @@ h1 span:nth-child(7) {
                    0 0 120px rgb(187, 31, 31),
                    0 0 160px rgb(187, 31, 31),
                    0 0 200px rgb(187, 31, 31)
+  }
+}
+
+.container {
+  display: flex;
+}
+
+.container div {
+  color: rgb(37, 37, 37);
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.container .modifying-text {
+  height: 90px;
+  margin-left: 15px;
+  line-height: 90px;
+  overflow: hidden;
+}
+
+.modifying-text .text {
+  position: relative;
+  font-family: Matrixc;
+  font-size: 60px;
+  font-weight: 100;
+  top: 0;
+  list-style: none;
+  text-transform: uppercase;
+  color: rgb(187, 31, 31);
+  animation: anim1 20s steps(4);
+  animation-delay: 11.8s;
+}
+
+@keyframes anim1 {
+  100% {
+    top: -360px;
+  }
+}
+
+.modifying-text .text span {
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+
+.modifying-text .text span::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  background: black;
+  border-left: 3px solid #962b2b;
+  animation: anim2 5s steps(20);
+  animation-iteration-count: 4;
+  animation-delay: 11.8s;
+}
+
+@keyframes anim2 {
+  40%, 60% {
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0;
   }
 }
